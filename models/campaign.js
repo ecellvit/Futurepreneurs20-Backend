@@ -4,6 +4,8 @@ const Schema = mongoose.Schema;
 const campaignSchema = new Schema({
     teamCode: String,
     description: String,
+    tagline: String,
+    hotelName: String,
     imageUrl: String
 }, {
     timestamps: true
@@ -11,4 +13,4 @@ const campaignSchema = new Schema({
 
 const Campaign = mongoose.model('campaign', campaignSchema);
 
-module.exports = Campaign;
+module.exports = Campaign; 
